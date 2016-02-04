@@ -30,7 +30,7 @@ postDict = {
 	'category' : '',
 	'trade' : '',
 	'column' : 'szse',
-	'columnTitle' : 'ÀúÊ·¹«¸æ²éÑ¯',
+	'columnTitle' : 'å†å²å…¬å‘ŠæŸ¥è¯¢',
 	'pageNum' : '1',
 	'pageSize' : '30',
 	'tabName' : 'fulltext',
@@ -38,7 +38,7 @@ postDict = {
 	'sortType' : '',
 	'limit' : '',
 	'showTitle' : '',
-	'seDate' : '2016-01-25'
+	'seDate' : '2006-01-25'
 }
 
 # print postDict
@@ -47,7 +47,7 @@ postDict = {
 
 # print postDict
 
-# postDict["seDate"] = 'ÇëÑ¡ÔñÈÕÆÚ'
+# postDict["seDate"] = 'è¯·é€‰æ‹©æ—¥æœŸ'
 
 # print postDict
 
@@ -59,7 +59,7 @@ postDict = {
 # <input type="hidden" id="category_hidden_input" name="category" />
 # <input type="hidden" id="trade_hidden_input" name="trade" />
 # <input type="hidden" id="column_hidden_input" name="column" value='szse'/>
-# <input type="hidden" id="columnTitle_hidden_input" name="columnTitle" value='ÉîÊĞ¹«¸æ'/>
+# <input type="hidden" id="columnTitle_hidden_input" name="columnTitle" value='æ·±å¸‚å…¬å‘Š'/>
 # <input type="hidden" id="pageNum_hidden_input" name="pageNum" value="1"/>
 # <input type="hidden" id="pageSize_hidden_input" name="pageSize" value="30"/>
 # <input type="hidden" id="tabName_hidden_input" name="tabName" value="latest"/>
@@ -74,7 +74,7 @@ postDict = {
 # category:
 # trade:
 # column:szse
-# columnTitle:ÀúÊ·¹«¸æ²éÑ¯
+# columnTitle:å†å²å…¬å‘ŠæŸ¥è¯¢
 # pageNum:1
 # pageSize:30
 # tabName:fulltext
@@ -115,38 +115,38 @@ data = json.loads(sjson,object_pairs_hook=dict)
 # print count
 # print dacount
 
-#ĞÂ½¨EXCEL±í¸ñ
+#æ–°å»ºEXCELè¡¨æ ¼
 book = Workbook()
 sheet1 = book.add_sheet('Sheet1')
 datetime = datetime.datetime.now().strftime('%Y-%m-%d')
 
-#ÊäÈë±êÌâ
-sheet1.row(0).write(0,u'id') #²úÆ·Ãû³Æ
-sheet1.row(0).write(1,u'secCode') #²úÆ·´úÂë
-sheet1.row(0).write(2,u'secName') #¹«¸æÊ±¼ä
-sheet1.row(0).write(3,u'orgId') #²úÆ·Ãû³Æ
-sheet1.row(0).write(4,u'announcementId') #²úÆ·´úÂë
-sheet1.row(0).write(5,u'announcementTitle') #¹«¸æÊ±¼ä
-sheet1.row(0).write(6,u'announcementTime') #²úÆ·Ãû³Æ
-sheet1.row(0).write(7,u'adjunctUrl') #²úÆ·´úÂë
-sheet1.row(0).write(8,u'adjunctSize') #¹«¸æÊ±¼ä
-sheet1.row(0).write(9,u'adjunctType') #²úÆ·Ãû³Æ
-sheet1.row(0).write(10,u'storageTime') #²úÆ·´úÂë
-sheet1.row(0).write(11,u'columnId') #¹«¸æÊ±¼ä
-sheet1.row(0).write(12,u'pageColumn') #²úÆ·Ãû³Æ
-sheet1.row(0).write(13,u'announcementType') #²úÆ·´úÂë
-sheet1.row(0).write(14,u'associateAnnouncement') #¹«¸æÊ±¼ä
-sheet1.row(0).write(15,u'important') #²úÆ·Ãû³Æ
-sheet1.row(0).write(16,u'batchNum') #²úÆ·´úÂë
-sheet1.row(0).write(17,u'announcementContent') #¹«¸æÊ±¼ä
-sheet1.row(0).write(18,u'announcementTypeName') #¹«¸æÊ±¼ä
+#è¾“å…¥æ ‡é¢˜
+sheet1.row(0).write(0,u'id') #äº§å“åç§°
+sheet1.row(0).write(1,u'secCode') #äº§å“ä»£ç 
+sheet1.row(0).write(2,u'secName') #å…¬å‘Šæ—¶é—´
+sheet1.row(0).write(3,u'orgId') #äº§å“åç§°
+sheet1.row(0).write(4,u'announcementId') #äº§å“ä»£ç 
+sheet1.row(0).write(5,u'announcementTitle') #å…¬å‘Šæ—¶é—´
+sheet1.row(0).write(6,u'announcementTime') #äº§å“åç§°
+sheet1.row(0).write(7,u'adjunctUrl') #äº§å“ä»£ç 
+sheet1.row(0).write(8,u'adjunctSize') #å…¬å‘Šæ—¶é—´
+sheet1.row(0).write(9,u'adjunctType') #äº§å“åç§°
+sheet1.row(0).write(10,u'storageTime') #äº§å“ä»£ç 
+sheet1.row(0).write(11,u'columnId') #å…¬å‘Šæ—¶é—´
+sheet1.row(0).write(12,u'pageColumn') #äº§å“åç§°
+sheet1.row(0).write(13,u'announcementType') #äº§å“ä»£ç 
+sheet1.row(0).write(14,u'associateAnnouncement') #å…¬å‘Šæ—¶é—´
+sheet1.row(0).write(15,u'important') #äº§å“åç§°
+sheet1.row(0).write(16,u'batchNum') #äº§å“ä»£ç 
+sheet1.row(0).write(17,u'announcementContent') #å…¬å‘Šæ—¶é—´
+sheet1.row(0).write(18,u'announcementTypeName') #å…¬å‘Šæ—¶é—´
 
  # "id": null,
  #        "secCode": "000058",
- #        "secName": "Éî Èü ¸ñ",
+ #        "secName": "æ·± èµ› æ ¼",
  #        "orgId": "gssz0000058",
  #        "announcementId": "1201970437",
- #        "announcementTitle": "·¢ĞĞ¹É·İ¼°Ö§¸¶ÏÖ½ğ¹ºÂò×Ê²ú²¢Ä¼¼¯ÅäÌ××Ê½ğôß¹ØÁª½»Ò×Ô¤°¸",
+ #        "announcementTitle": "å‘è¡Œè‚¡ä»½åŠæ”¯ä»˜ç°é‡‘è´­ä¹°èµ„äº§å¹¶å‹Ÿé›†é…å¥—èµ„é‡‘æš¨å…³è”äº¤æ˜“é¢„æ¡ˆ",
  #        "announcementTime": 1454515200000,
  #        "adjunctUrl": "finalpage/2016-02-04/1201970437.PDF",
  #        "adjunctSize": 3687,
@@ -159,16 +159,16 @@ sheet1.row(0).write(18,u'announcementTypeName') #¹«¸æÊ±¼ä
         # "important": true,
         # "batchNum": 1454561640546,
         # "announcementContent": null,
-        # "announcementTypeName": "Ôö·¢"
+        # "announcementTypeName": "å¢å‘"
 
-#e_¿ªÍ·µÄÎªexcel±í¸ñ±äÁ¿,´ÓµÚ¶şĞĞ£¨1£©¿ªÊ¼Ğ´ÈëÊı¾İ
+#e_å¼€å¤´çš„ä¸ºexcelè¡¨æ ¼å˜é‡,ä»ç¬¬äºŒè¡Œï¼ˆ1ï¼‰å¼€å§‹å†™å…¥æ•°æ®
 e_row = 1
 num = 1
 
 while data["announcements"]:
 	for y in data["announcements"]:
 		print y["announcementTitle"]
-		sheet1.row(e_row).write(0,y["id"]) #²úÆ·Ãû³Æ
+		sheet1.row(e_row).write(0,y["id"]) #äº§å“åç§°
 		sheet1.row(e_row).write(1,y["secCode"])
 		sheet1.row(e_row).write(2,y["secName"])
 		sheet1.row(e_row).write(3,y["orgId"])
@@ -204,7 +204,7 @@ while data["announcements"]:
 # 		if x:
 # 			for y in x:
 # 				print y["announcementTitle"]
-# 				sheet1.row(e_row).write(0,y["id"]) #²úÆ·Ãû³Æ
+# 				sheet1.row(e_row).write(0,y["id"]) #äº§å“åç§°
 # 				sheet1.row(e_row).write(1,y["secCode"])
 # 				sheet1.row(e_row).write(2,y["secName"])
 # 				sheet1.row(e_row).write(3,y["orgId"])
@@ -235,8 +235,8 @@ while data["announcements"]:
 # 	sjson2 = resp.read()
 # 	data = json.loads(sjson2,object_pairs_hook=dict)
 
-#±£´æÊı¾İ
-file_name = u'¹«¸æÊ±¼ä'+datetime+'.xls'
+#ä¿å­˜æ•°æ®
+file_name = u'å…¬å‘Šæ—¶é—´'+datetime+'.xls'
 book.save(file_name)
 book.save(TemporaryFile())
 
@@ -247,20 +247,20 @@ book.save(TemporaryFile())
 # with open('test.txt', 'w') as f:
 #     f.write(resp.read())
 
-# # ¶¨ÒåÒ»¸ö±äÁ¿£¬´Ó3¿ªÊ¼»ñÈ¡Êı¾İ
+# # å®šä¹‰ä¸€ä¸ªå˜é‡ï¼Œä»3å¼€å§‹è·å–æ•°æ®
 # i = 1
 
-# #ĞÂ½¨EXCEL±í¸ñ
+# #æ–°å»ºEXCELè¡¨æ ¼
 # book = Workbook()
 # sheet1 = book.add_sheet('Sheet1')
 # datetime = datetime.datetime.now().strftime('%Y-%m-%d')
 
-# #ÊäÈë±êÌâ
-# sheet1.row(0).write(0,u'²úÆ·Ãû³Æ') #²úÆ·Ãû³Æ
-# sheet1.row(0).write(1,u'²úÆ·´úÂë') #²úÆ·´úÂë
-# sheet1.row(0).write(2,u'¹«¸æÊ±¼ä') #¹«¸æÊ±¼ä
+# #è¾“å…¥æ ‡é¢˜
+# sheet1.row(0).write(0,u'äº§å“åç§°') #äº§å“åç§°
+# sheet1.row(0).write(1,u'äº§å“ä»£ç ') #äº§å“ä»£ç 
+# sheet1.row(0).write(2,u'å…¬å‘Šæ—¶é—´') #å…¬å‘Šæ—¶é—´
 
-# #e_¿ªÍ·µÄÎªexcel±í¸ñ±äÁ¿,´ÓµÚ¶şĞĞ£¨1£©¿ªÊ¼Ğ´ÈëÊı¾İ
+# #e_å¼€å¤´çš„ä¸ºexcelè¡¨æ ¼å˜é‡,ä»ç¬¬äºŒè¡Œï¼ˆ1ï¼‰å¼€å§‹å†™å…¥æ•°æ®
 # e_row = 1
 
 
@@ -272,16 +272,16 @@ book.save(TemporaryFile())
 
 # 		if True:
 
-# 			#½¨Á¢Á¬½Ó£¬»ñÈ¡Êı¾İ
+# 			#å»ºç«‹è¿æ¥ï¼Œè·å–æ•°æ®
 # 			sub_resp = urllib2.urlopen(sub_url+tr.find_all('td')[0].a.get('href'))
 # 			sub_str = sub_resp.read()
 
-# 			res = re.findall(r'²úÆ·´úÂë([^£¬]+)',sub_str)
+# 			res = re.findall(r'äº§å“ä»£ç ([^ï¼Œ]+)',sub_str)
 
 # 			for product_code in res:
-# 				sheet1.row(e_row).write(0,product_name) #²úÆ·Ãû³Æ
-# 				sheet1.row(e_row).write(1,product_code.decode('utf-8').replace(u'¡¾','').replace(u'¡¿','').replace(u'Îª','')) #²úÆ·´úÂë
-# 				sheet1.row(e_row).write(2,product_time) #¹«¸æÊ±¼ä
+# 				sheet1.row(e_row).write(0,product_name) #äº§å“åç§°
+# 				sheet1.row(e_row).write(1,product_code.decode('utf-8').replace(u'ã€','').replace(u'ã€‘','').replace(u'ä¸º','')) #äº§å“ä»£ç 
+# 				sheet1.row(e_row).write(2,product_time) #å…¬å‘Šæ—¶é—´
 # 				e_row = e_row + 1
 # 				#print product_name,product_code,product_time
 
@@ -289,8 +289,8 @@ book.save(TemporaryFile())
 # 		i = i + 1
 
 	
-# #±£´æÊı¾İ
-# #±£´æÊı¾İ
-# file_name = '..\\'+u'²úÆ·¹«¸æÊ±¼ä'+datetime+'.xls'
+# #ä¿å­˜æ•°æ®
+# #ä¿å­˜æ•°æ®
+# file_name = '..\\'+u'äº§å“å…¬å‘Šæ—¶é—´'+datetime+'.xls'
 # book.save(file_name)
 # book.save(TemporaryFile())
